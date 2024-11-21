@@ -1,0 +1,259 @@
+items:
+  - id: proMenuCloud
+    title: Облако
+    columns:
+      - id: proMenuCloudColumn1
+        items:
+          - title: Популярное
+            isPromoted: true
+            children:
+              - title: Облачные серверы
+                description: Виртуальные серверы на Linux для хостинга и разработки
+                href: /cloud/vps/
+                qa: regcloud_popular_cloud
+              - title: Базы данных PostgreSQL
+                description: Управляемый кластер баз данных с СУБД PostgreSQL
+                href: /cloud/postgresql
+                qa: regcloud_popular_databases-postgresql
+              - title: Виртуальный дата-центр VMware
+                description: Облачная инфраструктура (IaaS) на базе платформы VMware
+                href: /vmware/
+                ym: menu-regcloud-vmw
+                qa: regcloud_popular_vmware_cloud
+      - id: proMenuCloudColumn2
+        items:
+          - title: Облачная платформа Рег.ру
+            children:
+              - title: Облачные серверы
+                href: /cloud/vps/
+                qa: regcloud_groups_cloud
+              - title: Высокочастотные серверы
+                href: /cloud/vps/turbo
+                qa: regcloud_groups_turbo
+              - title: Кластеры Kubernetes
+                href: /cloud/managed-kubernetes
+                tag: Новое
+                qa: regcloud_groups_kubernetes
+              - title: Базы данных PostgreSQL
+                href: /cloud/postgresql
+                qa: regcloud_groups_databases-postgresql
+              - title: Базы данных MySQL
+                href: /cloud/mysql
+                qa: regcloud_groups_databases-mysql
+          - title: Приложения в облаке
+            children:
+              - title: Каталог приложений
+                href: /cloud/apps
+                qa: regcloud_groups_apps
+              - title: Ispmanager
+                href: /cloud/ispmanager
+                qa: regcloud_groups_isp-manager
+              - title: BitrixVM
+                href: /cloud/bitrixvm
+                qa: regcloud_groups_bitrix-vm
+              - title: Docker
+                href: /cloud/docker
+                qa: regcloud_groups_
+              - title: WireGuard
+                href: /cloud/wireguard
+                qa: regcloud_groups_
+      - id: proMenuCloudColumn3
+        items:
+          - title: Корпоративное облако VMware
+            children:
+              - title: Виртуальный дата-центр VMware
+                href: /vmware/
+                qa: regcloud_groups_vmware_cloud
+                ym: menu-regcloud-vmw
+          - title: Решения
+            children:
+              - title: Индивидуальные решения
+                href: /dedicated/corporate-solutions
+                qa: regcloud_groups_corporate-solutions
+                ym: menu-regcloud-ind
+              - title: Перенос VPS в Рег.ру
+                href: https://help.reg.ru/support/servery-vps/oblachnyye-servery/zakaz-i-upravleniye-uslugoy-oblachnyye-servery/perenos-sayta-na-vps-s-drugogo-hostinga-na-oblachnyye-servery-reg-ru
+                qa: regcloud_groups_transfer-services
+      - id: proMenuCloudColumn4
+        items:
+          - title: Клиентам
+            children:
+              - title: Об облачной платформе Рег.ру
+                href: /cloud/
+                qa: regcloud_groups_
+              - title: Панель Облачных серверов
+                href: https://cloud.reg.ru/
+                qa: regcloud_groups_panel-cloud
+              - title: Пополнить Облачный счёт
+                href: /cloud/renewal
+                qa: regcloud_groups_service-renewal
+              - title: Бонусная программа
+                href: /reseller/referral-program/
+                qa: regcloud_groups_referral-program-rules
+              - title: Тарифы VPS
+                href: /vps/
+                qa: regcloud_groups_tarifs-vps
+              - title: Договоры и письма
+                href: https://help.reg.ru/support/dokymenty/
+                qa: regcloud_groups_agreements-letters
+              - title: Справка по Облачным серверам
+                href: https://help.reg.ru/support/servery-vps/oblachnyye-servery/
+                qa: regcloud_groups_support-cloud
+  - id: proMenuDedicated
+    title: Выделенные серверы
+    columns:
+      - id: proMenuDedicatedColumn1
+        items:
+          - title: Популярное
+            isPromoted: true
+            children:
+              - title: Выделенные серверы
+                description: Готовые конфигурации для проектов любой сложности
+                href: /dedicated/
+                qa: servers_popular_dedicated
+              - title: Конфигуратор
+                description: Соберите свой сервер
+                href: /dedicated/corporate-solutions
+                qa: servers_popular_configurator
+              - title: Индивидуальные решения
+                description: Инфраструктура под ключ под ваши задачи
+                href: /dedicated/corporate-solutions
+                ym: menu-servers-ind
+                qa: servers_popular_corporate-solutions
+      - id: proMenuDedicatedColumn2
+        items:
+          - title: Аренда сервера
+            children:
+              - title: Dedicated-серверы (Выделенные)
+                href: /dedicated/
+                qa: servers_groups_dedicated
+              - title: Конфигуратор серверов
+                href: /dedicated/configurator
+                qa: servers_groups_configurator
+              - title: Выделенные серверы с GPU
+                href: /dedicated/gpu
+                qa: servers_groups_gpu
+              - title: Серверы под заказ
+                href: /dedicated/sendrequest
+                qa: servers_groups_sendrequest
+              - title: Распродажа серверов
+                href: /dedicated/discount
+                qa: servers_groups_discount
+              - title: Аренда СХД
+                href: /dedicated/arenda-skhd
+                qa: servers_groups_arenda-skhd
+                tag: Новое
+              - title: Выделенные серверы для 1С
+                href: /dedicated/1c
+                qa: servers_groups_1c
+      - id: proMenuDedicatedColumn3
+        items:
+          - title: Решения
+            children:
+              - title: Индивидуальные решения
+                href: /dedicated/corporate-solutions
+                qa: servers_groups_corporate-solutions
+                ym: menu-servers-ind
+                tag: Новое
+              - title: Перенос сервера в Рег.ру
+                href: /dedicated/migration
+                qa: servers_groups_migration
+                tag: Хит
+          - title: Услуги
+            children:
+              - title: Администрирование сервера
+                href: /dedicated/administration
+                qa: servers_groups_administration
+              - title: Мониторинг серверов
+                href: /dedicated/monitoring
+                qa: servers_groups_monitoring
+              - title: Бэкап сервера
+                href: /dedicated/backup
+                qa: servers_groups_backup
+              - title: Все услуги
+                href: /dedicated/additional
+                qa: servers_groups_additional
+      - id: proMenuDedicatedColumn4
+        items:
+          - title: Размещение в дата-центре
+            children:
+              - title: Colocation (Размещение сервера)
+                href: /colocation/
+                qa: servers_groups_colocation
+              - title: Аренда стоек
+                href: /colocation/stand_rental/
+                qa: servers_groups_stand-rental
+          - title: Дата-центры
+            children:
+              - title: Курчатовский
+                href: /dedicated/datacenter
+                qa: servers_groups_datacenter
+              - title: Варшавка
+                href: /dedicated/datacenter2
+                qa: servers_groups_datacenter2
+          - title: Клиентам
+            children:
+              - title: Бонусная программа
+                href: /reseller/referral-program/
+                qa: servers_groups_referral-program-rules
+  - id: proMenuPrivateCloud
+    title: Частное облако
+    columns:
+      - id: proMenuPrivateCloudColumn1
+        items:
+          - title: Частные облака
+            children:
+              - title: Частное облако VMware
+                href: /dedicated/private-cloud#vmware
+                qa: private_cloud_groups_private-cloud
+                ym: menu-private_cloud-cld
+              - title: Частное облако OpenStack
+                href: /dedicated/private-cloud#openstack
+                qa: private_cloud_groups_private-cloud
+                ym: menu-private_cloud-cld
+                tag: Новое
+      - id: proMenuPrivateCloudColumn2
+        items:
+          - title: Решения
+            children:
+              - title: Гибридное облако
+                href: /dedicated/hybrid-cloud
+                qa: private_cloud_groups_hybrid-cloud
+                ym: menu-private_cloud-hyb
+              - title: Индивидуальные решения
+                href: /dedicated/corporate-solutions
+                qa: private_cloud_groups_corporate-solutions
+                ym: menu-private_cloud-ind
+              - title: Перенос инфраструктуры в Рег.ру
+                href: /dedicated/migration
+                qa: private_cloud_groups_migration
+                tag: Хит
+  - id: proMenu1cCloud
+    title: 1C в облаке
+    columns:
+      - id: proMenu1cCloudColumn1
+        items:
+          - title: 1C в облаке
+            children:
+              - title: Облако 1C PaaS
+                href: /cloud-1c-paas/
+                qa: cloud_1c_groups_cloud-1c-paas
+                tag: Новое
+              - title: Аренда 1C в облаке
+                href: /cloud-1c/
+                qa: cloud_1c_groups_cloud-1c
+                ym: menu-cloud_1c-1c
+      - id: proMenu1cCloudColumn2
+        items:
+          - title: Облачная платформа Рег.ру
+            children:
+              - title: Облачные серверы BitrixVM
+                href: /cloud/bitrixvm
+                qa: cloud_1c_groups_bitrix-vm
+      - id: proMenu1cCloudColumn3
+        items:
+          - title: Выделенные серверы
+            children:
+              - title: Выделенные серверы для 1С
+                href: /dedicated/1c
+                qa: cloud_1c_groups_1c
